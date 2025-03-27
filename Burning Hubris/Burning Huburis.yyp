@@ -1,6 +1,6 @@
 {
   "$GMProject":"",
-  "%Name":"Burning Hubris",
+  "%Name":"Burning Huburis",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -32,11 +32,11 @@
   "MetaData":{
     "IDEVersion":"2024.11.0.179",
   },
-  "name":"Burning Hubris",
+  "name":"Burning Huburis",
   "resources":[
     {"id":{"name":"obj","path":"objects/obj/obj.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
+    {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
