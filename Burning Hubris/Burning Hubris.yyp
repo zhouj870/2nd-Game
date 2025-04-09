@@ -1,5 +1,5 @@
 {
-  "$GMProject":"",
+  "$GMProject":"v1",
   "%Name":"Burning Hubris",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
@@ -26,17 +26,24 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
+  "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"Burning Hubris",
   "resources":[
+    {"id":{"name":"enemy_kamikaze","path":"objects/enemy_kamikaze/enemy_kamikaze.yy",},},
+    {"id":{"name":"enemy1","path":"objects/enemy1/enemy1.yy",},},
+    {"id":{"name":"obj_bullets","path":"objects/obj_bullets/obj_bullets.yy",},},
+    {"id":{"name":"obj_player_attack","path":"objects/obj_player_attack/obj_player_attack.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj","path":"objects/obj/obj.yy",},},
+    {"id":{"name":"stop_shoot","path":"objects/stop_shoot/stop_shoot.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"death_script","path":"scripts/death_script/death_script.yy",},},
     {"id":{"name":"spr_player_flight","path":"sprites/spr_player_flight/spr_player_flight.yy",},},
   ],
   "resourceType":"GMProject",
