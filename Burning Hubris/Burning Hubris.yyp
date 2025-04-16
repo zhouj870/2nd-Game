@@ -48,6 +48,7 @@
     {"id":{"name":"spr_enemy_one_attack","path":"sprites/spr_enemy_one_attack/spr_enemy_one_attack.yy",},},
     {"id":{"name":"spr_enemy_one_flight","path":"sprites/spr_enemy_one_flight/spr_enemy_one_flight.yy",},},
     {"id":{"name":"spr_enemy_one_take_damage","path":"sprites/spr_enemy_one_take_damage/spr_enemy_one_take_damage.yy",},},
+    {"id":{"name":"spr_enemy_two_attack","path":"sprites/spr_enemy_two_attack/spr_enemy_two_attack.yy",},},
     {"id":{"name":"spr_enemy_two_flight","path":"sprites/spr_enemy_two_flight/spr_enemy_two_flight.yy",},},
     {"id":{"name":"spr_enemy_two_take_damage","path":"sprites/spr_enemy_two_take_damage/spr_enemy_two_take_damage.yy",},},
     {"id":{"name":"spr_player_flight","path":"sprites/spr_player_flight/spr_player_flight.yy",},},
