@@ -36,9 +36,10 @@
   "name":"Burning Hubris",
   "resources":[
     {"id":{"name":"enemy_kamikaze","path":"objects/enemy_kamikaze/enemy_kamikaze.yy",},},
-    {"id":{"name":"enemy1","path":"objects/enemy1/enemy1.yy",},},
     {"id":{"name":"obj_bullets","path":"objects/obj_bullets/obj_bullets.yy",},},
     {"id":{"name":"obj_enemy_Charge","path":"objects/obj_enemy_Charge/obj_enemy_Charge.yy",},},
+    {"id":{"name":"obj_enemy_one","path":"objects/obj_enemy_one/obj_enemy_one.yy",},},
+    {"id":{"name":"obj_enemy_two","path":"objects/obj_enemy_two/obj_enemy_two.yy",},},
     {"id":{"name":"obj_player_attack","path":"objects/obj_player_attack/obj_player_attack.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj","path":"objects/obj/obj.yy",},},
