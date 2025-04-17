@@ -59,6 +59,7 @@
     {"id":{"name":"spr_enemy_two_flight","path":"sprites/spr_enemy_two_flight/spr_enemy_two_flight.yy",},},
     {"id":{"name":"spr_enemy_two_take_damage","path":"sprites/spr_enemy_two_take_damage/spr_enemy_two_take_damage.yy",},},
     {"id":{"name":"spr_player_flight","path":"sprites/spr_player_flight/spr_player_flight.yy",},},
+    {"id":{"name":"spr_player_glide","path":"sprites/spr_player_glide/spr_player_glide.yy",},},
     {"id":{"name":"spr_player_idle","path":"sprites/spr_player_idle/spr_player_idle.yy",},},
     {"id":{"name":"spr_player_walking","path":"sprites/spr_player_walking/spr_player_walking.yy",},},
   ],
