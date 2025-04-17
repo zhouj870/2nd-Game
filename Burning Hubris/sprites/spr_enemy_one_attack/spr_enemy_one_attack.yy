@@ -30,7 +30,7 @@
   ],
   "name":"spr_enemy_one_attack",
   "nineSlice":null,
-  "origin":4,
+  "origin":7,
   "parent":{
     "name":"Sprites",
     "path":"folders/Sprites.yy",
@@ -97,7 +97,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":100,
-    "yorigin":75,
+    "yorigin":150,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
