@@ -1,9 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_bullets",
+  "%Name":"obj_enemy_one_bullets",
   "eventList":[],
   "managed":true,
-  "name":"obj_bullets",
+  "name":"obj_enemy_one_bullets",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -27,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_enemy_one_bullet",
+    "path":"sprites/spr_enemy_one_bullet/spr_enemy_one_bullet.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
