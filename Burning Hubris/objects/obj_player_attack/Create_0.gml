@@ -1,1 +1,1 @@
-bow_health = 100; 
+arrow_health = 100; 
