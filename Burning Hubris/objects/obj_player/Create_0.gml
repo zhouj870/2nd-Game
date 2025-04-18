@@ -7,6 +7,7 @@ face = 1;
 //stats
 playerHealth = 100; 
 flameGauge = 100; 
+
 //dodge
 dodgeSpeed = 6; 
 dodgeTime = 10; 

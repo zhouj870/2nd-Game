@@ -64,7 +64,7 @@ if dodgeKey && !isDodging && moveDir != 0 && onGround {
 if isDodging {
 	xspd = moveDir * dodgeSpeed;
 	dodgeTimer -= 1;
-	
+	sprite_index = flyingSpr;
 	
 	if (dodgeTimer <= 0) {
 		isDodging = false;
