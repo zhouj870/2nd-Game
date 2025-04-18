@@ -7,7 +7,11 @@ face = 1;
 //stats
 player_health = 100; 
 
-
+//dodge
+dodgeSpeed = 6; 
+dodgeTime = 10; 
+dodgeTimer = 0;
+isDodging = false;
 //jump
 grav = 0.2;
 termVal = 4;

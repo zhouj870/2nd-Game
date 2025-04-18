@@ -2,7 +2,7 @@ var rightKey = keyboard_check(vk_right) || keyboard_check(ord("D"));
 var leftKey = keyboard_check(vk_left) || keyboard_check(ord("A"));
 var jumpKey = keyboard_check_pressed(vk_up) || keyboard_check(ord("W"));
 var downKey = keyboard_check(vk_down) || keyboard_check(ord("S"));
-
+var dodgeKey = keyboard_check(vk_space);
 
 //x movement 
 moveDir = rightKey - leftKey;
@@ -52,6 +52,22 @@ if jumpKey && onGround
 if !onGround && yspd > 0
 {
 	sprite_index = glideSpr;
+}
+// Start dodge
+if dodgeKey && !isDodging && moveDir != 0 && onGround {
+	isDodging = true;
+	dodgeTimer = dodgeTime;
+}
+
+// Apply dodge if active
+if isDodging {
+	xspd = moveDir * dodgeSpeed;
+	dodgeTimer -= 1;
+	
+	
+	if (dodgeTimer <= 0) {
+		isDodging = false;
+	}
 }
 
 // Sprite handling
