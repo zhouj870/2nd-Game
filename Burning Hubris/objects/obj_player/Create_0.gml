@@ -9,7 +9,7 @@ player_health = 100;
 
 
 //jump
-grav = 0.275;
+grav = 0.2;
 termVal = 4;
 jspd =	-3.25;
 onGround = true;

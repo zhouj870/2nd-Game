@@ -8,7 +8,7 @@ var downKey = keyboard_check(vk_down) || keyboard_check(ord("S"));
 moveDir = rightKey - leftKey;
 
 if moveDir != 0 {face = moveDir;};
-
+image_xscale = face; 
 
 if place_meeting(x+xspd, y, obj)
 {
