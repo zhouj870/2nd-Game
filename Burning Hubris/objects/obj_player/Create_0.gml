@@ -4,6 +4,9 @@ yspd = 0;
 moveDir = 0;
 face = 1;
 
+//stats
+player_health = 100; 
+
 
 //jump
 grav = 0.275;

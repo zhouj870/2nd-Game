@@ -1,7 +1,8 @@
-var rightKey = keyboard_check(vk_right);
-var leftKey = keyboard_check(vk_left);
-var jumpKey = keyboard_check_pressed(vk_up);
-var downKey = keyboard_check(vk_down);
+var rightKey = keyboard_check(vk_right) || keyboard_check(ord("D"));
+var leftKey = keyboard_check(vk_left) || keyboard_check(ord("A"));
+var jumpKey = keyboard_check_pressed(vk_up) || keyboard_check(ord("W"));
+var downKey = keyboard_check(vk_down) || keyboard_check(ord("S"));
+
 
 //x movement 
 moveDir = rightKey - leftKey;
@@ -30,9 +31,48 @@ else
 {
 	y += yspd;
 }
+// Check if player is on the ground
+if place_meeting(x, y + 1, obj)
+{
+	onGround = true;
+}
+else
+{
+	onGround = false;
+}
 
-if abs(xspd) > 0 {sprite_index = walkSpr};
+// Jumping
+if jumpKey && onGround
+{
+	yspd = jspd;
+	onGround = false;
+}
 
-if yspd && xspd == 0 {sprite_index = idleSpr};
+// Gliding
+if !onGround && yspd > 0
+{
+	sprite_index = glideSpr;
+}
+
+// Sprite handling
+if onGround
+{
+	if abs(xspd) > 0 {
+		sprite_index = walkSpr;
+	} else {
+		sprite_index = idleSpr;
+	}
+}
+else
+{
+	if yspd > 0 {
+		sprite_index = glideSpr; // falling
+	} else {
+		sprite_index = flyingSpr; // going up
+	}
+}
+
+
+
 
 
