@@ -4,6 +4,7 @@ var jumpKey = keyboard_check_pressed(vk_up) || keyboard_check(ord("W"));
 var downKey = keyboard_check(vk_down) || keyboard_check(ord("S"));
 var dodgeKey = keyboard_check(vk_space);
 var attackKey = keyboard_check(ord("F")) || keyboard_check(mb_left);
+
 //x movement 
 moveDir = rightKey - leftKey;
 

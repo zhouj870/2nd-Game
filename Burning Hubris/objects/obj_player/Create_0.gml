@@ -5,8 +5,8 @@ moveDir = 0;
 face = 1;
 
 //stats
-player_health = 100; 
-
+playerHealth = 100; 
+flameGauge = 100; 
 //dodge
 dodgeSpeed = 6; 
 dodgeTime = 10; 
