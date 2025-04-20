@@ -8,6 +8,11 @@ face = 1;
 playerHealth = 100; 
 flameGauge = 100; 
 
+//shooting
+can_shoot = true;
+shoot_cooldown = 10; 
+shoot_timer = 0;
+
 //dodge
 dodgeSpeed = 6; 
 dodgeTime = 10; 

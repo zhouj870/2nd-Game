@@ -71,6 +71,22 @@ if isDodging {
 	}
 }
 //attack 
+if (!can_shoot) {
+    shoot_timer--;
+    if (shoot_timer <= 0) {
+        can_shoot = true;
+    }
+}
+if (mouse_check_button_pressed(mb_left) && can_shoot) {
+    var arrow = instance_create_layer(x, y, "Instances", obj_player_attack);
+	var angle = point_direction(x, y, mouse_x, mouse_y);
+    arrow.direction = angle;
+	arrow.image_angle = angle;
+	arrow.speed = 10;
+	
+	can_shoot = false;
+    shoot_timer = shoot_cooldown;
+}
 
 // Sprite handling
 if onGround
