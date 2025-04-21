@@ -1,2 +1,3 @@
-arrow_health = 100; 
+arrowHealth = 100; 
 image_angle = direction;
+arrowDamage = 10; 
