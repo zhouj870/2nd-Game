@@ -47,9 +47,10 @@ if canGlide && jumpKey && onGround
 {
 	yspd = jspd;
 	onGround = false;
+	
 }
 
-// Gliding
+// Gliding while falling 
 if canGlide && !onGround && yspd > 0
 {
 	sprite_index = glideSpr;
