@@ -5,7 +5,7 @@ moveDir = 0;
 face = 1;
 
 //stats
-playerHealth = 100; 
+hp = 100; 
 flameGauge = 100; 
 
 //shooting
