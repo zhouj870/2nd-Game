@@ -5,7 +5,8 @@ moveDir = 0;
 face = 1;
 
 //stats
-hp = 100; 
+max_hp = 100;
+hp = max_hp;
 flameGauge = 100; 
 
 //shooting
@@ -30,3 +31,11 @@ glideSpr = spr_player_glide
 walkSpr = spr_player_walking;
 flyingSpr = spr_player_flight;
 
+//burning gauge
+fireGauge = 100;
+fireGaugeMax = 100; 
+fireGaugeTickSpeed = 0.5; 
+fireDamageCooldown = 30;
+fireDamageTimer = 0;
+
+canGlide = true; 

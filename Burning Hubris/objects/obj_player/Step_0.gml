@@ -3,7 +3,7 @@ var leftKey = keyboard_check(vk_left) || keyboard_check(ord("A"));
 var jumpKey = keyboard_check_pressed(vk_up) || keyboard_check(ord("W"));
 var downKey = keyboard_check(vk_down) || keyboard_check(ord("S"));
 var dodgeKey = keyboard_check(vk_space);
-var attackKey = keyboard_check_pressed(ord("F")) || keyboard_check_pressed(mb_left);
+var attackKey = keyboard_check_pressed(ord("F")) || mouse_check_button_pressed(mb_left);
 
 //x movement 
 moveDir = rightKey - leftKey;
@@ -43,14 +43,14 @@ else
 }
 
 // Jumping
-if jumpKey && onGround
+if canGlide && jumpKey && onGround
 {
 	yspd = jspd;
 	onGround = false;
 }
 
 // Gliding
-if !onGround && yspd > 0
+if canGlide && !onGround && yspd > 0
 {
 	sprite_index = glideSpr;
 }
@@ -87,7 +87,25 @@ if (mouse_check_button_pressed(mb_left)|| keyboard_check_pressed(ord("F")) && ca
 	can_shoot = false;
     shoot_timer = shoot_cooldown;
 }
+if (fireGauge < fireGaugeMax) {
+   fireGauge += fireGaugeTickSpeed;
+    if (fireGauge > fireGaugeMax) {
+        fireGauge = fireGaugeMax;
+    }
+}
+if (fireGauge >= fireGaugeMax) {
+    canGlide = false;
 
+    // Burn damage logic
+    fireDamageTimer++;
+    if (fireDamageTimer >= fireDamageCooldown) {
+        hp -= 2; // apply damage
+        fireDamageTimer = 0;
+    }
+} else {
+    canGlide = true;
+    fireDamageTimer = 0; // reset burn timer if not burning
+}
 // Sprite handling
 if onGround
 {
