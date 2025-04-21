@@ -77,7 +77,7 @@ if (!can_shoot) {
         can_shoot = true;
     }
 }
-if (mouse_check_button_pressed(mb_left) && can_shoot) {
+if (mouse_check_button_pressed(mb_left)|| keyboard_check_pressed(ord("F")) && can_shoot) {
     var arrow = instance_create_layer(x, y, "Instances", obj_player_attack);
 	var angle = point_direction(x, y, mouse_x, mouse_y);
     arrow.direction = angle;
