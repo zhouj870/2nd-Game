@@ -39,3 +39,6 @@ fireDamageCooldown = 30;
 fireDamageTimer = 0;
 
 canGlide = true; 
+
+//tile set
+tile_map = layer_tilemap_get_id("Tiles_Col");

@@ -24,7 +24,7 @@ yspd += grav;
 
 if yspd > termVal {yspd = termVal};
 
-if place_meeting(x, y+yspd, obj)
+if place_meeting(x, y+yspd, tile_map)
 {
 	yspd = 0;
 }
@@ -33,7 +33,7 @@ else
 	y += yspd;
 }
 // Check if player is on the ground
-if place_meeting(x, y + 1, obj)
+if place_meeting(x, y + 1, tile_map)
 {
 	onGround = true;
 }
