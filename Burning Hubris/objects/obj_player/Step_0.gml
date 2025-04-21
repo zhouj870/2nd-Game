@@ -84,7 +84,7 @@ if (mouse_check_button_pressed(mb_left)|| keyboard_check_pressed(ord("F")) && ca
     arrow.direction = angle;
 	arrow.image_angle = angle;
 	arrow.speed = 10;
-	
+	sprite_index = spr_player_transition_attack;
 	can_shoot = false;
     shoot_timer = shoot_cooldown;
 }
