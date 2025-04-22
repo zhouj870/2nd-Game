@@ -36,6 +36,7 @@
   "name":"Burning Hubris",
   "resources":[
     {"id":{"name":"enemy_kamikaze","path":"objects/enemy_kamikaze/enemy_kamikaze.yy",},},
+    {"id":{"name":"obj_cloud3","path":"objects/obj_cloud3/obj_cloud3.yy",},},
     {"id":{"name":"obj_enemy_Charge","path":"objects/obj_enemy_Charge/obj_enemy_Charge.yy",},},
     {"id":{"name":"obj_enemy_one_bullets","path":"objects/obj_enemy_one_bullets/obj_enemy_one_bullets.yy",},},
     {"id":{"name":"obj_enemy_one","path":"objects/obj_enemy_one/obj_enemy_one.yy",},},
@@ -55,6 +56,10 @@
     {"id":{"name":"tutorial_room","path":"rooms/tutorial_room/tutorial_room.yy",},},
     {"id":{"name":"win_screen","path":"rooms/win_screen/win_screen.yy",},},
     {"id":{"name":"death_script","path":"scripts/death_script/death_script.yy",},},
+    {"id":{"name":"spr_cloud1","path":"sprites/spr_cloud1/spr_cloud1.yy",},},
+    {"id":{"name":"spr_cloud2","path":"sprites/spr_cloud2/spr_cloud2.yy",},},
+    {"id":{"name":"spr_cloud3","path":"sprites/spr_cloud3/spr_cloud3.yy",},},
+    {"id":{"name":"spr_cloud4","path":"sprites/spr_cloud4/spr_cloud4.yy",},},
     {"id":{"name":"spr_clouds","path":"sprites/spr_clouds/spr_clouds.yy",},},
     {"id":{"name":"spr_enemy_one_attack","path":"sprites/spr_enemy_one_attack/spr_enemy_one_attack.yy",},},
     {"id":{"name":"spr_enemy_one_bullet","path":"sprites/spr_enemy_one_bullet/spr_enemy_one_bullet.yy",},},

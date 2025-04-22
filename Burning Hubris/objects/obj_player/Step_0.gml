@@ -142,6 +142,14 @@ else if (onGround) {
 	}
 }
 
+if(vspeed >0) {
+    if (place_meeting(x,y+1,obj_cloud3)){
+        while (!place_meeting(x,y,obj_cloud3)){
+            y+=1;
+        }
+        xspd =0;
+    }
+}
 
 
 
