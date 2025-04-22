@@ -1,3 +1,4 @@
+function Script2(){
 var rightKey = keyboard_check(vk_right) || keyboard_check(ord("D"));
 var leftKey = keyboard_check(vk_left) || keyboard_check(ord("A"));
 var jumpKey = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
@@ -150,8 +151,4 @@ if(vspeed >0) {
         xspd =0;
     }
 }
-
-
-
-
-
+}
