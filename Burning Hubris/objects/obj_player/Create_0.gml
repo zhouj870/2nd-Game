@@ -3,6 +3,7 @@ xspd = 0;
 yspd = 0;
 moveDir = 0;
 face = 1;
+moveSpeed = 4;
 
 //stats
 max_hp = 100;
@@ -37,6 +38,7 @@ fireGaugeMax = 100;
 fireGaugeTickSpeed = 0.5; 
 fireDamageCooldown = 30;
 fireDamageTimer = 0;
+fireGaugeCooldownRate = 0.2;
 
 canGlide = true; 
 
