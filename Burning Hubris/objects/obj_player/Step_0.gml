@@ -16,6 +16,8 @@ if(!isDodging)
 if moveDir != 0 {face = moveDir;};
 image_xscale = face; 
 
+/*
+
 if place_meeting(x+xspd, y, obj_cloud3)
 {
 	xspd = 0;
@@ -24,10 +26,16 @@ else
 {
 	x += xspd;
 }
+*/
+
+if (!place_meeting(x + xspd, y, obj_cloud3))
+{
+	x += xspd;
+}
 
 if yspd > termVal {yspd = termVal};
 
-if place_meeting(x, y + 1, obj_cloud3)
+if place_meeting(x, y + 2, obj_cloud3)
 {
 	onGround = true;
 }
@@ -144,10 +152,10 @@ else if (onGround) {
 
 if(vspeed >0) {
     if (place_meeting(x,y+1,obj_cloud3)){
-        while (!place_meeting(x,y,obj_cloud3)){
+        if (!place_meeting(x,y,obj_cloud3)){
             y+=1;
         }
-        xspd =0;
+       // xspd =0;
     }
 }
 
