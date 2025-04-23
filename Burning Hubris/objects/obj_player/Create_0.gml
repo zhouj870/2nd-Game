@@ -23,7 +23,7 @@ isDodging = false;
 //jump
 grav = 0.2;
 termVal = 4;
-jspd =	-3.25;
+jspd =	3.25;
 onGround = true;
 
 //sprites
@@ -40,4 +40,6 @@ fireDamageCooldown = 30;
 fireDamageTimer = 0;
 fireGaugeCooldownRate = 0.2;
 
+isGliding = false; 
 canGlide = true; 
+groundBuffer = 0; 
