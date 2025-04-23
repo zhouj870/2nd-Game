@@ -45,7 +45,7 @@ else
 }
 
 // Jumping
-if canGlide && jumpKey && onGround
+if jumpKey && onGround
 {
 	yspd = -jspd;
 	onGround = false;
