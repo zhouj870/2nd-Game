@@ -101,12 +101,12 @@ if ((mouse_check_button_pressed(mb_left) || keyboard_check_pressed(ord("F"))) &&
     shoot_timer = shoot_cooldown;
 }
 // Gliding increases the fire gauge
-if (!onGround && canGlide && yspd > 0) {
+/*if (!onGround && canGlide && yspd > 0) {
     fireGauge += fireGaugeTickSpeed;
     if (fireGauge > fireGaugeMax) {
         fireGauge = fireGaugeMax;
     }
-}
+}*/
 // Cooling down while flying up or on the ground
 else {
     fireGauge -= fireGaugeCooldownRate;
