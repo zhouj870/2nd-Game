@@ -1,10 +1,10 @@
 {
   "$GMSprite":"",
   "%Name":"spr_cloud3",
-  "bboxMode":0,
+  "bboxMode":1,
   "bbox_bottom":164,
   "bbox_left":0,
-  "bbox_right":519,
+  "bbox_right":524,
   "bbox_top":0,
   "collisionKind":1,
   "collisionTolerance":0,

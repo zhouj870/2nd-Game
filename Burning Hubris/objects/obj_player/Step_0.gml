@@ -6,148 +6,64 @@ var downKey = keyboard_check(vk_down) || keyboard_check(ord("S"));
 var dodgeKey = keyboard_check(vk_space);
 var attackKey = keyboard_check_pressed(ord("F")) || mouse_check_button_pressed(mb_left);
 
-// Horizontal Movement
+//move direction
 moveDir = rightKey - leftKey;
 
-if (!isDodging) {
-    xspd = moveDir * moveSpeed;
-}
-
-if (moveDir != 0) {
-    face = moveDir;
-}
+if moveDir != 0 {face = moveDir;};
 image_xscale = face;
 
-if (!place_meeting(x + xspd, y, obj_cloud3)) {
-    x += xspd;
-}
+//get xspd
+xspd = moveDir *moveSpeed;
 
-// Terminal Velocity Cap
-if (yspd > termVal) {
-    yspd = termVal;
+//x Col
+if(place_meeting(x + xspd, y, obj_cloud3))
+{
+	xspd = 0;
 }
+x += xspd;
 
-// Ground Check with Buffer
-if (place_meeting(x, bbox_bottom + 1, obj_cloud3)) {
-    onGround = true;
-    groundBuffer = groundBufferMax;
-} else {
-    if (groundBuffer > 0) {
-        groundBuffer--;
-        onGround = true;
-    } else {
-        onGround = false;
-    }
-}
-// Jumping
-if (jumpKey && onGround) {
-    yspd = -jspd;
-    onGround = false;
-}
-
-// Gravity
+//Y Col
 yspd += grav;
-if (yspd > termVal) {
-    yspd = termVal;
+
+if(yspd > termVel) 
+{
+	yspd = termVel;
 }
 
-// Vertical Movement & Collision
-if (!place_meeting(x, y + yspd, obj_cloud3)) {
-    y += yspd;
-} else {
-    yspd = 0;
-}
-// Gliding logic - only triggers when falling
-if (!onGround && yspd > 0.5 && canGlide && fireGauge < fireGaugeMax) {
-    isGliding = true;
-} else {
-    isGliding = false;
-}
-/*
-// Start Dodge
-if (dodgeKey && !isDodging && moveDir != 0 && onGround) {
-    isDodging = true;
-    dodgeTimer = dodgeTime;
+//Jump
+if(jumpKey && place_meeting(x, y+1, obj_cloud3))
+{
+	yspd = jspd;
 }
 
-// Apply Dodge
-if (isDodging) {
-    xspd = moveDir * dodgeSpeed;
-    dodgeTimer -= 1;
-    sprite_index = flyingSpr;
-
-    if (dodgeTimer <= 0) {
-        isDodging = false;
-    }
+if(place_meeting(x, y + yspd, obj_cloud3))
+{
+	yspd = 0;
 }
-*/
-// Attack
+
+y += yspd;
+
+
+
+//attack 
 if (!can_shoot) {
     shoot_timer--;
     if (shoot_timer <= 0) {
         can_shoot = true;
     }
 }
-if (attackKey && can_shoot) {
-	isGliding = false; 
+if ((mouse_check_button_pressed(mb_left) || keyboard_check_pressed(ord("F"))) && can_shoot) {
     var arrow = instance_create_layer(x, y, "Instances", obj_player_attack);
-    var angle = point_direction(x, y, mouse_x, mouse_y);
+	var angle = point_direction(x, y, mouse_x, mouse_y);
     arrow.direction = angle;
-    arrow.image_angle = angle;
-    arrow.speed = 10;
-    sprite_index = spr_player_transition_attack;
-    can_shoot = false;
+	arrow.image_angle = angle;
+	arrow.speed = 10;
+	sprite_index = spr_player_transition_attack;
+	can_shoot = false;
     shoot_timer = shoot_cooldown;
 }
 
-// Fire Gauge Logic
-if (!onGround && canGlide && yspd > 0) {
-    fireGauge += fireGaugeTickSpeed;
-    if (fireGauge > fireGaugeMax) {
-        fireGauge = fireGaugeMax;
-    }
-} else {
-    fireGauge -= fireGaugeCooldownRate;
-    if (fireGauge < 0) {
-        fireGauge = 0;
-    }
-}
-
-// Burn Effect When Overheated
-if (fireGauge >= fireGaugeMax) {
-    canGlide = false;
-    fireDamageTimer++;
-    if (fireDamageTimer >= fireDamageCooldown) {
-        hp -= 2;
-        fireDamageTimer = 0;
-    }
-} else {
-    canGlide = true;
-    fireDamageTimer = 0;
-}
-
-// Optional death on gauge empty
-if (fireGauge == 0) {
-    instance_destroy();
-}
 
 
-// Sprite Handling
-if (isDodging) {
-    sprite_index = flyingSpr;
-}
-else if (isGliding) {
-    sprite_index = glideSpr;
-}
-
-
-
-
-// Fix sticking to slope/platform
-if (yspd > 0) {
-    if (place_meeting(x, y + 1, obj_cloud3)) {
-        if (!place_meeting(x, y, obj_cloud3)) {
-            y += 1;
-        }
-    }
-}
+if(abs(xspd) > 0) { sprite_index = walkSpr}
+else if(onGround && xspd == 0) {sprite_index = idleSpr};

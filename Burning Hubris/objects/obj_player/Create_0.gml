@@ -22,8 +22,8 @@ dodgeTimer = 0;
 isDodging = false;
 //jump
 grav = 0.2;
-termVal = 4;
-jspd =	3.25;
+termVel = 4;
+jspd =	-3.25;
 
 
 //sprites
