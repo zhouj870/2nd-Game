@@ -22,7 +22,7 @@ if(place_meeting(x + xspd, y, obj_cloud3))
 }
 x += xspd;
 
-//Y Col
+//y Col
 yspd += grav;
 
 if(yspd > termVel) 
