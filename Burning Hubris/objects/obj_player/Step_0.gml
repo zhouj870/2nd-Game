@@ -139,9 +139,9 @@ if (isDodging) {
 else if (isGliding) {
     sprite_index = glideSpr;
 }
-else if (onGround) {
-    sprite_index = (abs(xspd) > 0) ? walkSpr : idleSpr;
-}
+
+
+
 
 // Fix sticking to slope/platform
 if (yspd > 0) {

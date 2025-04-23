@@ -27,6 +27,7 @@ jspd =	3.25;
 
 
 //sprites
+currentState = spr_player_idle;
 idleSpr = spr_player_idle;
 glideSpr = spr_player_glide
 walkSpr = spr_player_walking;
