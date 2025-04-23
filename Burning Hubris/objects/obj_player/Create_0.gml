@@ -24,7 +24,7 @@ isDodging = false;
 grav = 0.2;
 termVal = 4;
 jspd =	3.25;
-onGround = true;
+
 
 //sprites
 idleSpr = spr_player_idle;
@@ -43,3 +43,5 @@ fireGaugeCooldownRate = 0.2;
 isGliding = false; 
 canGlide = true; 
 groundBuffer = 0; 
+groundBufferMax = 5;
+onGround = false; 

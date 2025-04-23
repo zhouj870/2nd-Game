@@ -30,7 +30,7 @@ if (yspd > termVal) {
 // Ground Check with Buffer
 if (place_meeting(x, y + 1, obj_cloud3)) {
     onGround = true;
-    groundBuffer = 5;
+    groundBuffer = groundBufferMax;
 } else {
     if (groundBuffer > 0) {
         groundBuffer--;
@@ -39,7 +39,6 @@ if (place_meeting(x, y + 1, obj_cloud3)) {
         onGround = false;
     }
 }
-
 // Jumping
 if (jumpKey && onGround) {
     yspd = -jspd;
