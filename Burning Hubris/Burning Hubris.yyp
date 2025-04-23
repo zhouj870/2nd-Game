@@ -42,7 +42,6 @@
     {"id":{"name":"obj_enemy_one","path":"objects/obj_enemy_one/obj_enemy_one.yy",},},
     {"id":{"name":"obj_enemy_two_bullets","path":"objects/obj_enemy_two_bullets/obj_enemy_two_bullets.yy",},},
     {"id":{"name":"obj_enemy_two","path":"objects/obj_enemy_two/obj_enemy_two.yy",},},
-    {"id":{"name":"obj_player_arrow","path":"objects/obj_player_arrow/obj_player_arrow.yy",},},
     {"id":{"name":"obj_player_attack","path":"objects/obj_player_attack/obj_player_attack.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},},
