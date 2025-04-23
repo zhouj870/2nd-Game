@@ -67,7 +67,7 @@ else
 
 
 // Start dodge
-if dodgeKey && !isDodging && moveDir != 0 && onGround {
+/*if dodgeKey && !isDodging && moveDir != 0 && onGround {
 	isDodging = true;
 	dodgeTimer = dodgeTime;
 }
@@ -81,7 +81,7 @@ if isDodging {
 	if (dodgeTimer <= 0) {
 		isDodging = false;
 	}
-}
+}*/
 
 //attack 
 if (!can_shoot) {
@@ -136,10 +136,7 @@ if(fireGauge == 0)
 }
 
 // Sprite handling
-if (isDodging) {
-	sprite_index = flyingSpr;
-}
-else if (!onGround && canGlide && yspd > 0) {
+if (!onGround && canGlide && yspd > 0) {
 	sprite_index = glideSpr;
 }
 else if (onGround) {
