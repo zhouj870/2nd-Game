@@ -28,7 +28,7 @@ if (yspd > termVal) {
 }
 
 // Ground Check with Buffer
-if (place_meeting(x, y + 1, obj_cloud3)) {
+if (place_meeting(x, bbox_bottom + 1, obj_cloud3)) {
     onGround = true;
     groundBuffer = groundBufferMax;
 } else {
