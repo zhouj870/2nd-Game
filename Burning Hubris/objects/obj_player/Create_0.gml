@@ -23,7 +23,7 @@ isDodging = false;
 //jump
 grav = 0.2;
 termVel = 4;
-jspd =	-3.25;
+jspd =	-6.25;
 
 
 //sprites

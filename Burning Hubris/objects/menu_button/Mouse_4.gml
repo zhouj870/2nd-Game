@@ -1,0 +1,1 @@
+game_goto(menu_screen);

@@ -62,6 +62,9 @@ if ((mouse_check_button_pressed(mb_left) || keyboard_check_pressed(ord("F"))) &&
 	can_shoot = false;
     shoot_timer = shoot_cooldown;
 }
+if (sprite_index == spr_player_transition_attack && image_index >= image_number - 1) {
+    sprite_index = idleSpr; // or your default sprite
+}
 
 
 
