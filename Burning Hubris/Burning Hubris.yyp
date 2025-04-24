@@ -71,6 +71,7 @@
     {"id":{"name":"spr_enemy_two_death","path":"sprites/spr_enemy_two_death/spr_enemy_two_death.yy",},},
     {"id":{"name":"spr_enemy_two_flight","path":"sprites/spr_enemy_two_flight/spr_enemy_two_flight.yy",},},
     {"id":{"name":"spr_enemy_two_take_damage","path":"sprites/spr_enemy_two_take_damage/spr_enemy_two_take_damage.yy",},},
+    {"id":{"name":"spr_horse_test","path":"sprites/spr_horse_test/spr_horse_test.yy",},},
     {"id":{"name":"spr_lvl_one_bg","path":"sprites/spr_lvl_one_bg/spr_lvl_one_bg.yy",},},
     {"id":{"name":"spr_lvl_three_bg","path":"sprites/spr_lvl_three_bg/spr_lvl_three_bg.yy",},},
     {"id":{"name":"spr_lvl_two_bg","path":"sprites/spr_lvl_two_bg/spr_lvl_two_bg.yy",},},
