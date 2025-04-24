@@ -37,6 +37,7 @@
   "resources":[
     {"id":{"name":"enemy_kamikaze","path":"objects/enemy_kamikaze/enemy_kamikaze.yy",},},
     {"id":{"name":"obj_cloud3","path":"objects/obj_cloud3/obj_cloud3.yy",},},
+    {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"obj_enemy_Charge","path":"objects/obj_enemy_Charge/obj_enemy_Charge.yy",},},
     {"id":{"name":"obj_enemy_one_bullets","path":"objects/obj_enemy_one_bullets/obj_enemy_one_bullets.yy",},},
     {"id":{"name":"obj_enemy_one","path":"objects/obj_enemy_one/obj_enemy_one.yy",},},
@@ -45,7 +46,6 @@
     {"id":{"name":"obj_player_attack","path":"objects/obj_player_attack/obj_player_attack.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},},
-    {"id":{"name":"obj","path":"objects/obj/obj.yy",},},
     {"id":{"name":"stop_shoot","path":"objects/stop_shoot/stop_shoot.yy",},},
     {"id":{"name":"boss_room","path":"rooms/boss_room/boss_room.yy",},},
     {"id":{"name":"level_one","path":"rooms/level_one/level_one.yy",},},
