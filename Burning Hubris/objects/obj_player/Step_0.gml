@@ -3,9 +3,11 @@ var rightKey = keyboard_check(vk_right) || keyboard_check(ord("D"));
 var leftKey = keyboard_check(vk_left) || keyboard_check(ord("A"));
 var jumpKey = keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"));
 var downKey = keyboard_check(vk_down) || keyboard_check(ord("S"));
-var dodgeKey = keyboard_check(vk_space);
+var glideKey = keyboard_check(vk_space);
 var attackKey = keyboard_check_pressed(ord("F")) || mouse_check_button_pressed(mb_left);
 
+//Player movement
+#region
 //move direction
 moveDir = rightKey - leftKey;
 
@@ -43,9 +45,25 @@ if(place_meeting(x, y + yspd, obj_cloud3))
 
 y += yspd;
 
+#endregion
+
+//Gliding
+#region
+if glideKey
+{
+	gliding = true;
+}
+
+if gliding && yspd > 1
+{
+	yspd = 1.5
+}
+#endregion
+
 
 
 //attack 
+#region
 if (!can_shoot) {
     shoot_timer--;
     if (shoot_timer <= 0) {
@@ -65,6 +83,7 @@ if ((mouse_check_button_pressed(mb_left) || keyboard_check_pressed(ord("F"))) &&
 if (sprite_index == spr_player_transition_attack && image_index >= image_number - 1) {
     sprite_index = idleSpr; // or your default sprite
 }
+#endregion
 
 
 

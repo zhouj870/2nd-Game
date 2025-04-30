@@ -20,6 +20,7 @@ dodgeSpeed = 6;
 dodgeTime = 10; 
 dodgeTimer = 0;
 isDodging = false;
+
 //jump
 grav = 0.2;
 termVel = 4;
@@ -41,8 +42,6 @@ fireDamageCooldown = 30;
 fireDamageTimer = 0;
 fireGaugeCooldownRate = 0.2;
 
-isGliding = false; 
-canGlide = true; 
-groundBuffer = 0; 
-groundBufferMax = 5;
-onGround = false; 
+//Gliding
+gliding = false;
+onGround = true;
