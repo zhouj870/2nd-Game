@@ -44,9 +44,6 @@ if (!onGround && yspd > 0.5 && fireGauge > 0 && holdJump) {
     yspd = 1.5; // smoother fall
     fireGauge -= fireGaugeTickSpeed;
     if (fireGauge < 0) fireGauge = 0;
-} else if (!onGround && !gliding && fireGauge < fireGaugeMax) {
-    fireGauge += fireGaugeCooldownRate;
-    if (fireGauge > fireGaugeMax) fireGauge = fireGaugeMax;
 }
 
 if (place_meeting(x, y + yspd, obj_cloud3)) {
