@@ -15,11 +15,6 @@ can_shoot = true;
 shoot_cooldown = 10; 
 shoot_timer = 0;
 
-//dodge
-dodgeSpeed = 6; 
-dodgeTime = 10; 
-dodgeTimer = 0;
-isDodging = false;
 
 //jump
 grav = 0.2;
@@ -44,4 +39,4 @@ fireGaugeCooldownRate = 0.2;
 
 //Gliding
 gliding = false;
-onGround = true;
+onGround = place_meeting(x, y+1, obj_cloud3);
