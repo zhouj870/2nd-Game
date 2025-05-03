@@ -1,7 +1,7 @@
-if(alarm[1] < 0)
+if(dmgCoolDown <= 0)
 {
 	hp -= other.dmg;
+	dmgCoolDown = 20;
 	
-	alarm[1] = 20;
 }
 instance_destroy(other);

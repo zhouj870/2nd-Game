@@ -43,7 +43,9 @@ if (!onGround && yspd > 0.5 && fireGauge > 0 && holdJump) {
     gliding = true;
     yspd = 1.5; // smoother fall
     fireGauge -= fireGaugeTickSpeed;
-    if (fireGauge < 0) fireGauge = 0;
+    if (fireGauge <= 0) {
+		gliding = false;
+	};
 }
 
 if (place_meeting(x, y + yspd, obj_cloud3)) {
@@ -78,6 +80,23 @@ if (sprite_index == spr_player_transition_attack && image_index >= image_number 
     sprite_index = idleSpr; // or your default sprite
 }
 #endregion
+
+if (dmgCoolDown > 0) {
+    dmgCoolDown--;
+}
+
+if(!death && hp <= 0)
+{
+	death = true;
+	sprite_index = spr_player_dying;
+	image_speed=  0.3;
+}
+
+if(death)
+{
+	room_goto(lose_screen)
+}
+
 
 
 

@@ -9,6 +9,8 @@ moveSpeed = 4;
 max_hp = 100;
 hp = max_hp;
 flameGauge = 100; 
+death = false;
+dmgCoolDown = 0;
 
 //shooting
 can_shoot = true;
@@ -32,7 +34,7 @@ flyingSpr = spr_player_flight;
 //burning gauge
 fireGauge = 100;
 fireGaugeMax = 100; 
-fireGaugeTickSpeed = 0.5; 
+fireGaugeTickSpeed = 0.25; 
 fireDamageCooldown = 30;
 fireDamageTimer = 0;
 fireGaugeCooldownRate = 0.2;
