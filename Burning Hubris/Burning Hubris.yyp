@@ -49,6 +49,7 @@
     {"id":{"name":"obj_enemy_two","path":"objects/obj_enemy_two/obj_enemy_two.yy",},},
     {"id":{"name":"obj_player_attack","path":"objects/obj_player_attack/obj_player_attack.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_spawner","path":"objects/obj_spawner/obj_spawner.yy",},},
     {"id":{"name":"obj_start","path":"objects/obj_start/obj_start.yy",},},
     {"id":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},},
     {"id":{"name":"restart_button","path":"objects/restart_button/restart_button.yy",},},
@@ -104,8 +105,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"menu_screen","path":"rooms/menu_screen/menu_screen.yy",},},
     {"roomId":{"name":"tutorial_room","path":"rooms/tutorial_room/tutorial_room.yy",},},
+    {"roomId":{"name":"menu_screen","path":"rooms/menu_screen/menu_screen.yy",},},
     {"roomId":{"name":"level_one","path":"rooms/level_one/level_one.yy",},},
     {"roomId":{"name":"level_two","path":"rooms/level_two/level_two.yy",},},
     {"roomId":{"name":"boss_room","path":"rooms/boss_room/boss_room.yy",},},
