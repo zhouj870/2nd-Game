@@ -38,6 +38,7 @@
     {"id":{"name":"fnt_button","path":"fonts/fnt_button/fnt_button.yy",},},
     {"id":{"name":"enemy_kamikaze","path":"objects/enemy_kamikaze/enemy_kamikaze.yy",},},
     {"id":{"name":"menu_button","path":"objects/menu_button/menu_button.yy",},},
+    {"id":{"name":"obj_boss","path":"objects/obj_boss/obj_boss.yy",},},
     {"id":{"name":"obj_cloud3","path":"objects/obj_cloud3/obj_cloud3.yy",},},
     {"id":{"name":"obj_controller","path":"objects/obj_controller/obj_controller.yy",},},
     {"id":{"name":"obj_credit_btn","path":"objects/obj_credit_btn/obj_credit_btn.yy",},},
