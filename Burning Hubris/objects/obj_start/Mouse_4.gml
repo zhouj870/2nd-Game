@@ -1,1 +1,1 @@
-room_goto(tutorial_room);
+room_goto_next();
