@@ -43,5 +43,16 @@ fireGaugeCooldownRate = 0.2;
 gliding = false;
 onGround = place_meeting(x, y+1, obj_cloud3);
 
-//Game theme music
-audio_play_sound(snd_theme, 1, true);
+// Stop any music that might be playing already
+audio_stop_sound(snd_theme);
+audio_stop_sound(boss_music);
+
+// Decide music based on room
+if (room == boss_room) {
+    global.music_mode = "boss";
+    audio_play_sound(boss_music, 1, true); // Loop boss music
+} else {
+    global.music_mode = "theme";
+    audio_play_sound(snd_theme, 1, true); // Loop theme music
+}
+
