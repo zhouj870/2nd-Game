@@ -56,6 +56,15 @@ if (place_meeting(x, y + yspd, obj_cloud3)) {
 }
 y += yspd;
 
+if (!onGround) {
+    sprite_index = spr_player_glide;
+}
+if (moveDir != 0) {
+    sprite_index = walkSpr;
+} else {
+    sprite_index = idleSpr;
+}
+
 #endregion
 
 //attack 
@@ -96,6 +105,7 @@ if(death)
 {
 	room_goto(lose_screen)
 }
+
 
 
 
