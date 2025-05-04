@@ -45,3 +45,8 @@ onGround = place_meeting(x, y+1, obj_cloud3);
 
 //Game theme music
 audio_play_sound(snd_theme, 10, true);
+if(audio_play_sound(boss_music, 1, true))
+{
+	audio_stop_sound(snd_theme);
+	
+}

@@ -18,3 +18,10 @@ face = -1;
 
 //Death flag
 dead = false;
+
+//Boss music
+if (!audio_is_playing(boss_music)) {
+    audio_stop_all(); // optional: stop previous music
+    audio_play_sound(boss_music, 1, true); // true = loop
+}
+

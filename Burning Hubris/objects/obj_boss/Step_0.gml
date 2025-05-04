@@ -1,5 +1,6 @@
 if(dead)
 {
+	audio_stop_sound(boss_music);
 	room_goto(win_screen);
 }
 
@@ -8,7 +9,9 @@ switch(state){
 		//idle sprite here
 		state_timer --;
 		
-		x += facing *moveSpd;
+		var dir_x = sign(obj_player.x - x);
+		x += dir_x * moveSpd;
+		image_xscale = dir_x;
 		
 		//collision if needed here
 		
@@ -21,7 +24,7 @@ switch(state){
 	case "attack":
 		//attack sprite here
 		if(state_timer == 15){
-			//attack added here
+			instance_create_layer(x,y,"Instances",obj_enemy_two_bullets);
 		}
 		
 		state_timer--;

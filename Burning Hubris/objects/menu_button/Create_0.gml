@@ -1,2 +1,2 @@
-height = 64;
-width = 64;
+height = 528;
+width = 528;
