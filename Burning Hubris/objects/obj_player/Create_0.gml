@@ -42,3 +42,6 @@ fireGaugeCooldownRate = 0.2;
 //Gliding
 gliding = false;
 onGround = place_meeting(x, y+1, obj_cloud3);
+
+//Game theme music
+audio_play_sound(snd_theme, 10, true);

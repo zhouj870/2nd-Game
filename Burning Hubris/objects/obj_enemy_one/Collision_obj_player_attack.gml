@@ -6,3 +6,4 @@ if(enemyHealth <= 0){
 	image_speed = 0.3;
 	xspd = 0;
 }
+audio_play_sound(snd_arrowhit,4,false)
