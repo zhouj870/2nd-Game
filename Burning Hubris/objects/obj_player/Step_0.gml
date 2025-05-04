@@ -1,4 +1,4 @@
-// Key Input
+	// Key Input
 var rightKey = keyboard_check(vk_right) || keyboard_check(ord("D"));
 var leftKey = keyboard_check(vk_left) || keyboard_check(ord("A"));
 var jumpKey = keyboard_check_pressed(vk_space);

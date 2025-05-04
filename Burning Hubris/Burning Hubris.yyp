@@ -106,8 +106,8 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
-    {"roomId":{"name":"tutorial_room","path":"rooms/tutorial_room/tutorial_room.yy",},},
     {"roomId":{"name":"menu_screen","path":"rooms/menu_screen/menu_screen.yy",},},
+    {"roomId":{"name":"tutorial_room","path":"rooms/tutorial_room/tutorial_room.yy",},},
     {"roomId":{"name":"level_one","path":"rooms/level_one/level_one.yy",},},
     {"roomId":{"name":"level_two","path":"rooms/level_two/level_two.yy",},},
     {"roomId":{"name":"boss_room","path":"rooms/boss_room/boss_room.yy",},},
