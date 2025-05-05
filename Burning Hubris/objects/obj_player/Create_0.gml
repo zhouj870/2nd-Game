@@ -20,8 +20,8 @@ shoot_timer = 0;
 
 //jump
 grav = 0.2;
-termVel = 4;
-jspd =	-6.25;
+termVel = 5;
+jspd =	-7.25;
 
 
 //sprites
